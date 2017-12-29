@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorMediumGray"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@color/colorBackground"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/media_controller"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.deeshantrajput.olaplaystudios.views.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:text="Afreen"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorPrimary"/>
+
+            <ImageButton
+                android:id="@+id/btnPlay"
+                style="@android:style/MediaButton.Play"
+                android:background="@color/colorTangerine"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_width="50dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGray"
+            android:orientation="horizontal">
+
+
+            <ImageButton android:id="@+id/fullscreen"
+                android:layout_marginTop="-7dp"
+                android:paddingTop="4dip"
+                android:paddingBottom="4dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="4dip"
+                android:layout_gravity="top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                />
+            <com.deeshantrajput.olaplaystudios.views.TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDarkGray"
+                android:textStyle="normal"
+                android:id="@+id/artist"
+                android:text="Artists"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="listDivider" />
+    <declare-styleable name="TextView">
+        <attr name="textStyle" format="enum">
+            <enum name="black" value="1"/>
+            <enum name="black_italic" value="2"/>
+            <enum name="bold" value="3"/>
+            <enum name="bold_italic" value="4"/>
+            <enum name="book" value="5"/>
+            <enum name="book_italic" value="6"/>
+            <enum name="light" value="7"/>
+            <enum name="light_italic" value="8"/>
+            <enum name="medium" value="9"/>
+            <enum name="medium_italic" value="10"/>
+            <enum name="thin" value="11"/>
+            <enum name="thin_italic" value="12"/>
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:background="@color/colorMediumGray"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorMediumGray"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="?attr/actionBarSize">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/logo"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+
+                <com.deeshantrajput.olaplaystudios.views.TextView
+                    android:id="@+id/title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/logo"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_sub_regular"
+                    android:text="Ola Play"
+                    app:textStyle="bold" />
+
+
+                <com.deeshantrajput.olaplaystudios.views.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="STUDIOS"
+                    android:layout_toEndOf="@+id/title_text"
+                    android:textColor="@color/colorTangerine"
+                    android:layout_marginStart="8dp"
+                    android:textSize="@dimen/text_size_large"
+                    app:textStyle="bold"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="6dp"
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/search_badge"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="6dp"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/rt"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_search"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/search_bar"
+                android:background="@null"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="4dp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/rt"
+                android:hint="Search by name..,"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_badge">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="4dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/songList"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+
